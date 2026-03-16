@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Geist', system-ui, sans-serif;
+    background-color: #080810;
+    color: #e8e8f0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-surface border border-border rounded-lg transition-all duration-200;
+  }
+  .card-hover {
+    @apply hover:border-cyan/30 hover:shadow-cyan-glow;
+  }
+  .mono-value {
+    font-family: 'JetBrains Mono', monospace;
+    color: #00d4ff;
+  }
+  .section-label {
+    @apply text-text-secondary text-xs font-sans uppercase tracking-widest;
+  }
+}
+
+/* Ant Design table row tints */
+.ant-table-row-suspended td {
+  background: rgba(255, 51, 102, 0.04) !important;
+}
+.ant-table-row-trial-expiring td {
+  background: rgba(255, 170, 0, 0.04) !important;
+}
+
+/* Ant Design dark scrollbar inside drawers/modals */
+.ant-drawer-body,
+.ant-modal-body {
+  scrollbar-width: thin;
+  scrollbar-color: #1e1e35 transparent;
+}
+
+/* Remove blue outline on Ant inputs */
+.ant-input:focus,
+.ant-input-affix-wrapper:focus,
+.ant-input-affix-wrapper-focused {
+  box-shadow: 0 0 0 2px rgba(0, 212, 255, 0.1) !important;
+}
+
+/* Thin cyan scrollbar */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #1e1e35; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(0, 212, 255, 0.3); }

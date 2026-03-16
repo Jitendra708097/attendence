@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AttendEase — Super Admin</title>
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg-base:        #080810;
+      --bg-surface:     #0f0f1a;
+      --bg-elevated:    #161625;
+      --bg-border:      #1e1e35;
+      --accent-primary: #00d4ff;
+      --accent-green:   #00ff88;
+      --accent-red:     #ff3366;
+      --accent-amber:   #ffaa00;
+      --accent-purple:  #a855f7;
+      --text-primary:   #e8e8f0;
+      --text-secondary: #6b6b8a;
+      --text-mono:      #00d4ff;
+    }
+    html, body, #root {
+      height: 100%;
+      background: #080810;
+      color: #e8e8f0;
+    }
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: #080810; }
+    ::-webkit-scrollbar-thumb { background: #1e1e35; border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: #00d4ff40; }
+    ::selection { background: #00d4ff30; color: #00d4ff; }
+  </style>
+</head>
+<body class="bg-[#080810] text-[#e8e8f0] font-sans antialiased">
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>

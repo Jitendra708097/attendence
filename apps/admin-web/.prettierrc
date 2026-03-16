@@ -1,0 +1,1 @@
+/**\n * @module .prettierrc\n * @description Prettier configuration.\n */\n{\n  \"semi\": true,\n  \"singleQuote\": true,\n  \"trailingComma\": \"es5\",\n  \"tabWidth\": 2,\n  \"printWidth\": 100\n}\n

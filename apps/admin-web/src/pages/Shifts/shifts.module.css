@@ -1,0 +1,14 @@
+/* Shifts page styles */
+.container {
+  padding: 24px;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 16px;
+}
+
+.addButton {
+  margin-bottom: 24px;
+}

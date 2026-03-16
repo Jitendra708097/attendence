@@ -1,0 +1,24 @@
+/* Attendance page styles */
+.container {
+  padding: 24px;
+}
+
+.filtersSection {
+  background: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.anomalyRow {
+  background-color: #fffbe6 !important;
+}
+
+.anomalyRow:hover {
+  background-color: #fffd73 !important;
+}
+
+.exportButton {
+  margin-top: 16px;
+}

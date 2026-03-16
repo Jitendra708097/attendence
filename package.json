@@ -1,0 +1,19 @@
+{
+  "name": "attendease",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:backend": "npm run dev --workspace=apps/backend",
+    "dev:admin": "npm run dev --workspace=apps/admin-web",
+    "dev:superadmin": "npm run dev --workspace=apps/superadmin-web",
+    "dev:mobile": "npm run dev --workspace=apps/mobile",
+    "migrate": "npm run migrate --workspace=apps/backend",
+    "migrate:undo": "npm run migrate:undo --workspace=apps/backend",
+    "seed": "npm run seed --workspace=apps/backend"
+  }
+}
